@@ -1,0 +1,27 @@
+.profile {
+	text-align: center;
+}
+.left {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+.right {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+.greeting {
+	margin-top: 0;
+}
+.step_controls button {
+	display: inline-block;
+	border: none;
+	padding: 10px 20px;
+	background: #8FFF6E;
+}
+@media (max-width: 790px) {
+  .left {
+    display: none;
+  }
+}

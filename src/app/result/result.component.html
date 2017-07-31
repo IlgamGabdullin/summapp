@@ -1,0 +1,15 @@
+<div class="result">
+	<div class="step-title">
+		You entered: 
+	</div>
+	<table class='data-table'>
+		<tr>
+			<td *ngFor="let value of values" [ngClass]="{'green' : value.value >= 10}">
+				{{ value.value }}
+			</td>
+		</tr>
+	</table>
+	<div class="result-data">
+		Here is what you need: {{ result }}
+	</div>
+</div>

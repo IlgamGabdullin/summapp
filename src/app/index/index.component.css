@@ -1,0 +1,11 @@
+.index {
+	text-align: center;
+}
+.index h2 {
+	font-size: 34px;
+	font-weight: 900;
+}
+.index-content {
+	color: #111;
+	font-weight: 300;
+}

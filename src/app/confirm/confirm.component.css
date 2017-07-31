@@ -1,0 +1,21 @@
+.data-table {
+	min-width: 300px;
+	margin: 0 auto 20px;
+}
+.data-table td {
+	border: 1px solid #ccc;
+}
+.sort-link {
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+	margin-bottom: 25px;
+	display: inline-block;
+}
+.sort-link:hover {
+	text-decoration: underline;
+}
+.step-title {
+	margin-right: 10px;
+	margin-bottom: 15px;
+}

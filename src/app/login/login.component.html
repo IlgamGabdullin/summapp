@@ -1,0 +1,22 @@
+<div class="login">
+	<h3 class='login-title'>
+		Please, enter your email and password.
+	</h3>
+	<form (ngSubmit)='login()' *ngIf='!loggedIn' #todoForm>
+		<label for="email">Email:</label>
+		<input [(ngModel)]='email' name='email' type="email" id='email' required [ngClass]="{'validationError' : isNotCorrect}" (focus)='toggleValid()'>
+		<label for="pass">Password:</label>
+		<input [(ngModel)]='password' name='password' type="password" id='pass' required [ngClass]="{'validationError' : isNotCorrect}" (focus)='toggleValid()'>
+		<button type="submit" [disabled]='!todoForm.checkValidity()'>Log In</button>
+	</form>
+	<div class="validationError" *ngIf='isNotCorrect'>
+		Please, enter correct email or password
+	</div>
+	<p  *ngIf='loggedIn'>
+		You've already logged in!
+	</p>
+
+	<div class="login-tip" *ngIf='!loggedIn'>
+		For now, your email is 'admin@admin.ru' and your password is 'admin'
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<div class='start'>
+	<div class="step-title">
+		Please, enter data for summing <br> (note: only integers will be summarized).
+	</div>
+  <form #valuesForm>
+  	<a href='#' class="add_value" (click)='addValue($event)'>+</a>
+  	<div class="form-line" *ngFor="let value of values; let i = index">
+  		<input type="text" required [(ngModel)]="values[i].value" name="value{{i}}">
+
+  	</div>
+  	<button class='step_control-next' type="button" [disabled]='!valuesForm.checkValidity()' (click)='sendStep()'>next</button>
+  </form>
+</div>
+

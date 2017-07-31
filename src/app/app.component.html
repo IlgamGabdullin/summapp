@@ -1,3 +1,19 @@
 <h1>
   {{title}}
 </h1>
+
+<ul class="navigation_list">
+	<li>
+		<a routerLink="/welcome" routerLinkActive="active-link">Home</a>
+	</li>
+	<li>
+		<a routerLink="/login" routerLinkActive="active-link">Log In</a>
+	</li>
+	<li>
+		<a routerLink="/profile" routerLinkActive="active-link">Profile</a>
+	</li>
+</ul>
+
+<div class="content">
+	<router-outlet></router-outlet>
+</div>

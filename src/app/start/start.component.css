@@ -1,0 +1,24 @@
+.form-line {
+	padding-bottom: 10px;
+}
+.step-title {
+	margin-bottom: 15px;
+}
+.add_value {
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 900;
+	color: #5e5e5e;
+}
+.start form input {
+	padding: 5px 7px;
+}
+.start form button {
+	display: inline-block;
+	border: none;
+	padding: 10px 20px;
+	background: #8FFF6E;
+}
+.start form button[disabled] {
+	background: #eee;
+}

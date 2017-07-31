@@ -1,0 +1,15 @@
+<div class="confirm">
+	<div class="step-title">
+		Please, check the data out.
+	</div>
+	<table class='data-table'>
+		<tr>
+			<td *ngFor="let value of values">
+				{{ value.value }}
+			</td>
+		</tr>
+	</table>
+
+	<a href="" (click)='sortByUp($event)' class="sort-link">Sort by Up</a>
+	<a href="" (click)='sortByDown($event)' class="sort-link">Sort by Down</a>
+</div>

@@ -1,0 +1,22 @@
+<div class="profile">
+	<div class="left">
+		<p class='greeting'>
+			Hello, {{ getChangedUsername() }}
+		</p>
+		<div class="status">
+			Status: {{ titles[step-1] }}
+		</div>
+	</div>
+	<div class="right">
+		<div class="steps">
+			<app-start *ngIf='step == 1' [@stepState] (stepToMove)='moveTo(2)'></app-start>
+			<app-confirm *ngIf='step == 2' [@stepState]></app-confirm>
+			<app-calculate *ngIf='step == 3' [@stepState] (stepToMove)='moveTo(4)'></app-calculate>
+			<app-result *ngIf='step == 4' [@stepState]></app-result>
+		</div>
+		<div class="step_controls">
+			<button class="step_control-back" *ngIf='step != 1 && step != 3' (click)='back($event)'>back</button>
+			<button class="step_control-next" *ngIf='step == 2' (click)='next($event)'>next</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+.login {
+	text-align: center;
+}
+.login-title {
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.validationError {
+	border-color: #FF342F;
+}
+.login form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+.login form input {
+	display: block;
+	margin-bottom: 25px;
+	padding: 5px 7px;
+}
+.login form button {
+	display: inline-block;
+	border: none;
+	padding: 10px 20px;
+	background: #8FFF6E;
+}
+.login form button[disabled] {
+	background: #eee;
+}
+.login form {
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 70px;
+}
+.login-tip {
+	font-size: 11px;
+	color: #777;
+}
