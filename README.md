@@ -1,9 +1,10 @@
 # SummApp
 
-In order to run this app you will need [Angular CLI](https://github.com/angular/angular-cli)
+In order to run this app you will need [Angular CLI](https://github.com/angular/angular-cli).
 
-First of all clone it, change directory to summ-app and run 'npm i';
-Now you can run 'ng serve' and open `http://localhost:4200/` in your browser.
+First of all clone it, change directory to summ-app and run `npm i`.
+
+Now you can run `ng serve` and open `http://localhost:4200/` in your browser.
 
 ## Build
 
