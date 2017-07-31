@@ -30,6 +30,7 @@ export class ProfileComponent implements OnInit {
 	username: string;
 	step: number = 1;
   titles: string[] = ['Enter data', 'Confirm data', 'Calculating', 'Result'];
+  backButton = 'back';
 
  	constructor(private user: UserService, private data: DataService, private titleService: Title) { }
 
@@ -53,6 +54,7 @@ export class ProfileComponent implements OnInit {
         this.step -= 1;
       } else if(this.step == 4) {
         this.step = 1;
+        this.backButton = 'back';
       }
       this.titleService.setTitle( this.titles[this.step-1] );
   	}

@@ -15,8 +15,9 @@
 			<app-result *ngIf='step == 4' [@stepState]></app-result>
 		</div>
 		<div class="step_controls">
-			<button class="step_control-back" *ngIf='step != 1 && step != 3' (click)='back($event)'>back</button>
+			<button class="step_control-back" *ngIf='step != 1 && step != 3' (click)='back($event)'>{{ this.step != 4 ? 'back' : 'back to first step'}}</button>
 			<button class="step_control-next" *ngIf='step == 2' (click)='next($event)'>next</button>
 		</div>
 	</div>
 </div>
+
